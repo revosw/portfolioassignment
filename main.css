@@ -1,14 +1,38 @@
-body {
-    margin:0;
+* {
+    border: 2px solid black;
 }
 
-img {
-    height: 100%;
+body {
+    margin:0;
 }
 
 header {
     background: rgb(33, 134, 218);
     margin-bottom: 150px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+#hovedside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hovedside > article {
+    flex-basis: 300px;
+}
+
+#hovedside > article:first-of-type {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#hovedside img {
+    max-width: 400px;
+    max-height: 200px;
 }
 
 #shopping-cart-main {
@@ -17,12 +41,16 @@ header {
     align-items: flex-start;
 }
 
-#shopping-car
-
 #shopping-cart-main section {
     display: flex;
     flex-direction: column;
-    flex-grow:2;
+    gap: 20px;
+}
+
+#shopping-cart-main section > span{
+    align-self: flex-end;
+    font-weight: bold;
+    border-bottom: double black 1px;
 }
 
 #shopping-cart-main article {
@@ -30,9 +58,10 @@ header {
     display: flex;
     align-items: center;
     height: 150px;
+    gap: 50px;
 }
 
-#shopping-cart-main article:not(:last-of-type) {
+#shopping-cart-main article {
     border-bottom: 1px black solid;
 }
 
@@ -45,7 +74,7 @@ header {
 }
 
 article > input {
-    width: 20px;
+    width: 40px;
 }
 
 .container {
@@ -70,6 +99,23 @@ form {
     grid-template-columns: 50px 150px;
     gap: 8px;
     flex-grow:0;
+}
+
+figure {
+    position: relative;
+    margin: 0;
+}
+
+figure img {
+    max-width: 300px;
+}
+
+figure span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: black;
+    color: white;
 }
 
 input[placeholder=Navn] {
