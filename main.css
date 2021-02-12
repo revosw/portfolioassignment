@@ -1,7 +1,3 @@
-* {
-    border: 2px solid black;
-}
-
 body {
     margin:0;
 }
@@ -23,11 +19,11 @@ main {
 
 #hovedside > article {
     flex-basis: 300px;
+    text-align: center;
 }
 
 #hovedside > article:first-of-type {
     flex-basis: 100%;
-    text-align: center;
 }
 
 #hovedside img {
