@@ -24,10 +24,10 @@
     <form action="#">
         <input aria-label="Fullt navn" placeholder="Navn" type="text">
         <input aria-label="Adresse" placeholder="Adresse" type="text">
-        <input aria-label="Postnr" placeholder="Postnr" type="number">
+        <input aria-label="Postnr" maxlength="4" minlength="4" placeholder="Postnr" type="text">
         <input aria-label="Poststed" placeholder="Poststed" type="text">
-        <input aria-label="Kortnummer" placeholder="Kortnummer" type="number">
-        <input aria-label="CCV" placeholder="CCV" type="number">
+        <input aria-label="Kortnummer" placeholder="Kortnummer" maxlength="16" minlength="16" type="text">
+        <input aria-label="CCV" placeholder="CCV" maxlength="3" minlength="3" type="text">
         <input aria-label="Utløpsdato" placeholder="Utløpsdato" type="month">
         <button type="submit">BEKREFT KJØP</button>
     </form>
@@ -35,25 +35,25 @@
         <article>
             <img src="img/ram.webp" alt="Prosessor">
             <span>Corsair Vengeance RGB PRO DDR4 4000MHz 64GB</span>
-            <input aria-label="Antall" type="number">
+            <input aria-label="Antall" value="1" type="number">
             <span>8 299,-</span>
         </article>
         <article>
             <img src="img/monitor.webp" alt="Prosessor">
             <span>Acer Predator XB271HU</span>
-            <input aria-label="Antall" type="number">
+            <input aria-label="Antall" value="1" type="number">
             <span>5 600,-</span>
         </article>
         <article>
             <img src="img/cpu.webp" alt="Prosessor">
             <span>Ryzen 7 5800X</span>
-            <input aria-label="Antall" type="number">
+            <input aria-label="Antall" value="1" type="number">
             <span>4 890,-</span>
         </article>
         <article>
             <img src="img/motherboard.webp" alt="Prosessor">
             <span>ASUS ROG Strix B550-F GAMING hovedkort</span>
-            <input aria-label="Antall" type="number">
+            <input aria-label="Antall" value="1" type="number">
             <span>1 390,-</span>
         </article>
         <span>20 349,-</span>
