@@ -1,9 +1,8 @@
 provider "aws" {
-  features {}
   region = "eu-north-1"
 }
 
-resource "azurerm_resource_group" "rg" {
-  name     = "myTFResourceGroup"
-  location = "westus2"
+resource "aws_instance" "web" {
+  ami = "ami-0bd9c26722573e69b"
+  instance_type = "t3.micro"
 }
