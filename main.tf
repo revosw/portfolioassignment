@@ -1,4 +1,5 @@
 provider "aws" {
+  features {}
   region = "eu-north-1"
 }
 
