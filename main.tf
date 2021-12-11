@@ -66,6 +66,10 @@ resource "aws_security_group" "terraform-sg" {
       protocol    = "-1"
       self        = false
       to_port     = 0
+      description = "Outgoing"
+      ipv6_cidr_blocks = ["::/0"]
+      prefix_list_ids = []
+      security_groups = []
     }
   ]
   ingress = [
@@ -75,6 +79,10 @@ resource "aws_security_group" "terraform-sg" {
       protocol    = "tcp"
       self        = false
       to_port     = 22
+      description = "Incoming"
+      ipv6_cidr_blocks = ["::/0"]
+      prefix_list_ids = []
+      security_groups = []
     }
   ]
 }
